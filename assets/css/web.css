@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+
+/* colores web */
+:root {
+  --color1: #002c00;
+  --color2: #a7c900;
+  --color3: #ffcf00;
+  --color4:#f7ef00;
+  --color5:#ffff;
+}
+
+
+body {
+  font-size: 17.5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p.line {
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Slab", serif;
+}
+
+/* estilos header */
+header {
+  -moz-box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
+  -webkit-box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
+  box-shadow: 0 3px 3px rgba(94, 94, 94, 0.75);
+}
+
+header .bar-sup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 7.5%;
+  background: linear-gradient( rgba(167, 201,0, 1), rgba(7, 107, 7, 1));
+}
+
+header .bar-sup :hover{
+  color:var(--color3);
+}
+header .bar-sup a {
+  color: white;
+  font-size: 0.85em;
+}
+
+header nav.navbar {
+  background-color: var(--color5);
+  padding-left:7%;
+  padding-right:7%;
+}
+
+header a.nav-link {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.83em;
+  text-transform: uppercase;
+}
+
+header a.nav-link i {
+  font-size: 1.3em;
+}
+
+
+
+header .dropdown-menu {
+  background-color: #f6f6f8;
+  box-shadow: 0 0 3px rgb(197, 197, 197);
+}
+
+header .dropdown-item {
+  font-size: 0.8em;
+  padding: 8px 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .dropdown-menu > a:hover{
+  background-color:var(--color1);
+}
+header #submenu:hover{
+  background-color:var(--color1);
+}
+
+
+header #logo-elim {
+  position:absolute;
+  margin-top:-1.5rem;
+  margin-left: -2rem;
+}
+button >span{
+  color:black;
+}
+
+#text-logo{
+  font-weight: bold;
+  font-family: 'Jost', sans-serif;
+  padding-left:5rem;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:var(--color1);
+}
+
+/* estilos globales */
+.separador {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 3px solid var(--color3);
+}
+
+.separador > .sep_box {
+  width: 50px;
+  height: 48px;
+  text-align: center;
+  border: 3px solid var(--color3);
+  border-bottom: none;
+  margin-right: 15px;
+  padding-top: 8.5px;
+  margin-bottom: -1px;
+  color: #6b6969;
+}
+.separador > .sep_title {
+  font-size: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color1);
+}
+.separador2 {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 3px solid var(--color1);
+}
+.separador2 > .sep_box2 {
+  width: 50px;
+  height: 48px;
+  text-align: center;
+  border: 3px solid var(--color1);
+  border-bottom: none;
+  margin-right: 15px;
+  padding-top: 8.5px;
+  margin-bottom: -1px;
+  color: var(--color1);
+}
+
+.separador2 > .sep_title {
+  font-size: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color1);
+}
+.separador > .sep_title2 {
+  font-size: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color1);
+}
+
+.text-justify {
+  text-align: justify;
+}
+.back{
+  font-size:15px;
+}
+
+
+/* estilos footer */
+
+footer .bar-inf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 7%;
+  background-color: var(--color2);
+}
+
+footer .bar-inf a {
+  color: white;
+  font-size: 0.85em;
+}
+footer {
+  background: linear-gradient(rgba(167, 201,0, 0.90), rgba(0, 44, 0, 0.99));
+  background-size: 20%;
+}
+
+/*Estilo de infraestructura*/
+.nav-pills .nav-link{
+
+  color:var(--color1);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  color: #fff;
+  background-color: var(--color1);
+}
+footer #terminos{
+  font-size:1rem;
+}
+#perfiles{
+  padding-top:5.5rem;
+}
+.imgnivel{
+  height: 350px;
+}
+.ubic li{
+  align-items: center; 
+  border: none; 
+  background: transparent;
+  justify-content: center;
+}
+footer .bar-inf2 {
+  display: none;
+}
+
+/* mod responsive */
+@media screen and (max-width:600px) {
+
+  header #logo-elim {
+    
+    height: 50px;
+    margin-top: -10px;
+    margin-left: 3px;
+  }
+  #text-logo{
+    font-size:1rem;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+    padding-left:3.5rem;
+  }
+  header #logotipo {
+    margin-left: 30em;
+    font-size: 0.2em;
+  }
+  header nav.navbar {
+    background-color: var(--color5);
+    padding: 2.7% 3%;
+  }
+  footer .bar-inf {
+    padding: 6px 3%;
+  }
+  .separador > .sep_title {
+    font-size: 16px;
+    
+  }
+  .separador > .sep_title2 {
+    font-size: 12px;
+    
+  }
+ #col-niveles{
+   margin-bottom: 2rem;
+ }
+ .imgnivel{
+  height: 180px;
+}
+
+  header .bar-sup span {
+    display:none;
+  }
+  footer .bar-inf span{
+    display: none;
+  }
+  footer .bar-inf2 {
+    display:inline-block;
+    
+  }
+  footer .bar-inf2 span{
+    display:none;
+    
+  }
+  footer .div-escudo{
+    padding-bottom:1.5rem;
+  }
+  footer .contacto .form-check{
+    padding-left: .8rem;
+    padding-top:1rem;
+  }
+  header #submenu span{
+    display:none;
+  }
+ 
+  .ubic-img div{
+    padding-bottom: 1.2rem;
+  }
+  .ubic li{
+    
+    justify-content: left;
+  }
+  #div-logros{
+    margin-top: 0rem!important;
+    padding-top:0rem!important;
+    padding-bottom: 1.3rem;
+  }
+  .back{
+    font-size:10px!important;
+}
+#perfiles{
+  padding-top:2rem;
+}
+.sig-facebook{
+  display:none;
+}
+.ultimoitem{
+  padding-bottom: 0rem;
+}
+.fixed-top{
+  position: absolute;
+}
+
+}
+
+@media screen and (max-width:1399px) {
+
+  footer #terminos{
+    width:100%;
+    font-size:12px;
+  }
+  .back{
+    font-size:12px;
+}
+}

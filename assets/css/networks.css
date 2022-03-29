@@ -1,0 +1,48 @@
+ #networks {
+            position: fixed;
+            z-index: 800;
+            display: flex;
+            align-items: center;
+            height: 70vh;
+            font-size: 20px;
+            right: 0px;
+        }
+
+        #networks .item-1 {
+            background-color: #2323c5;
+            color: white;
+            padding: 9px 13px;
+            text-align: center;
+            border-top-left-radius: 7px;
+        }
+
+        #networks .item-2 {
+            background-color: #d40924;
+            color: white;
+            padding: 9px 13px;
+            text-align: center;
+        }
+
+        #networks .item-3 {
+            background-color: #219239;
+            color: white;
+            padding: 9px 13px;
+            text-align: center;
+        }
+
+        #networks .item-4 {
+            background-color: rgb(31, 202, 216);
+            color: white;
+            padding: 9px 13px;
+            text-align: center;
+            border-bottom-left-radius: 7px;
+        }
+
+        @media screen and (max-width:600px) {
+        
+            #networks {
+                display: none;
+            }
+        
+        
+        }
